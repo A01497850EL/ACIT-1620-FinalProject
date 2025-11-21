@@ -17,6 +17,8 @@ body {
     grid-template-columns: 2;
     grid-template-rows: 1;
     background-color: gray;
+    padding-left: 24px;
+    padding-right: 24px;
 
     #title{
         grid-column: 1;
