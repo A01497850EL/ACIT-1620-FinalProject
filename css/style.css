@@ -83,3 +83,7 @@ main{
     color: white;
 } 
 
+/* Posters for Grid */
+.poster img {
+    width: 20vw;
+}
