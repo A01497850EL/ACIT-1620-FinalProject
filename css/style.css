@@ -47,7 +47,7 @@ main{
 /* Header */
 #fullheader{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 30em; 
     grid-template-rows: 1;
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(16px);
@@ -62,10 +62,14 @@ main{
     #title{
         grid-column: 1;
         grid-row: 1;
-        background-image: url(images/title.svg);
+        background-image: url(../images/title.svg);
         margin: 0;
         align-items: center;
         display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 30em;
     }
 
     nav{
@@ -216,6 +220,12 @@ h1{
 
     .review-text {
         width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    #title{
+        background-image: url(../images/favicon.svg);
     }
 }
 
