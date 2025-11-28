@@ -47,8 +47,8 @@ main{
 /* Header */
 #fullheader{
     display: grid;
-    grid-template-columns: auto 33em; 
-    grid-template-rows: 1;
+    grid-template-columns: minmax(0, 1fr); 
+    grid-template-rows: auto;
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(16px);
     position: fixed;
@@ -63,7 +63,6 @@ main{
         grid-column: 1;
         grid-row: 1;
         background-image: url(../images/title.svg);
-        margin: 0;
         align-items: center;
         display: flex;
         background-position: center;
@@ -73,9 +72,10 @@ main{
     }
 
     nav{
+        margin-left: 10px;
         height: 100%;
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 1;    
     }
     
     #navmenu{
@@ -227,10 +227,12 @@ h1{
     #title{
         background-image: url(../images/favicon.svg);
         max-width: 5.5em;
-        min-width: 3.5em;
+        min-width: 50px;
         background-position: center;
 }
 }
+}
+
 @media (max-width: 500px){
     .poster {
         width: 100%;
