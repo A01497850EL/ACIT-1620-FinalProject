@@ -21,6 +21,7 @@
     --pred: #E43636;
     --beige: #E2DDB4;
     --cadyellow: #FDDA0D;
+    --strawberry: #f38d8d;
 
 }
 
@@ -315,7 +316,7 @@ footer{
         font-style: normal;
         font-variation-settings:
             "wdth" 100;
-        color: var(--cham)
+        color: var(--strawberry)
     }
     
 }
