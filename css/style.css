@@ -223,14 +223,31 @@ h1{
 }
 
 @media (max-width: 700px) {
-#fullheader {
-    #title{
-        background-image: url(../images/favicon.svg);
-        max-width: 5.5em;
-        min-width: 50px;
-        background-position: center;
+    #fullheader {
+        #title {
+            background-image: url(../images/favicon.svg);
+            max-width: 5.5em;
+            min-width: 50px;
+            background-position: center;
+        }
+    }
 }
-}
+
+@media (max-width: 450px) {
+    #fullheader #navmenu a {
+        padding: 0.25em;
+        font-size: 1.4em;
+    }
+
+    #fullheader {
+        height: 70px;
+        padding-left: 0.6em;
+    }
+
+    #title {
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+    }
 }
 
 @media (max-width: 500px){
