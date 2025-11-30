@@ -376,9 +376,10 @@ textarea {
 }
 
 #submit:hover {
-    background: #c5bfa8
+    background: #c5bfa8;
+}
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
     .quotes {
         display: none;
