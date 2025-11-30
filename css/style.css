@@ -275,22 +275,15 @@ main {
 
 
 blockquote {
-border:none;
-font-family: "Roboto", sans-serif;
-margin-bottom:-30px;
-position: relative; 
-max-width: 1250px;
-grid-row: 2;
-grid-column: 2 / span 3;
+    border:none;
+    font-family: "Roboto", sans-serif;
+    margin-bottom:-30px;
+    position: relative; 
+    max-width: 1250px;
+    grid-row: 2;
+    grid-column: 2 / span 3;
     
 }
-
-
-@media (max-width: 800px) {
-
-    .quotes {
-        display: none;
-    }
 
 /* Anchor Links */
 .anchor_poster {
@@ -307,35 +300,14 @@ input:hover, textarea:hover {
 
 .anchor_poster:hover {
     border-color:#E43636
-
-
-@media (max-width: 700px) {
-    #fullheader {
-        #title {
-            background-image: url(../images/favicon.svg);
-            max-width: 5.5em;
-            min-width: 50px;
-            background-position: center;
-        }
-    }
 }
+
 
 #anchor_container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     margin-top: 5em;
     margin-left: 3em;
-@media (max-width: 450px) {
-    #fullheader #navmenu a {
-        padding: 0.25em;
-        font-size: 1.4em;
-    }
-
-    #fullheader {
-        height: 70px;
-        padding-left: 0.6em;
-    }
-
 }
 
 #OneBattle, #FantasticFour, #Tron, #MinusOne, #NowYouSee  {
@@ -343,7 +315,75 @@ input:hover, textarea:hover {
     scroll-margin-top: 150px;
 }
 
+/* contact.css changes here */
+
+#contactmain{
+    position: relative;
+    text-align: center;
+    padding-bottom: 128px;
+    height: 100%;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 0px auto 0px auto;
+    padding-top: 15px
+}
+
+input {
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+    background: transparent;
+    outline: none;
+    border: solid 1px #e43636;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    padding: 15px;
+
+    background: transparent;
+    outline: none;
+
+    border: solid 1px #e43636;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit {
+    width: 502px;
+
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+
+    outline: none;
+    cursor: pointer;
+
+    border: solid 1px #e43636;
+}
+
+#submit:hover {
+    background: #c5bfa8
+
 @media (max-width: 800px){
+
+    .quotes {
+        display: none;
+    }
+
     .reviewposter,
     .film_title,
     .nested-container,
@@ -412,6 +452,17 @@ input:hover, textarea:hover {
     }
 }
 
+@media (max-width: 700px) {
+    #fullheader {
+        #title {
+            background-image: url(../images/favicon.svg);
+            max-width: 5.5em;
+            min-width: 50px;
+            background-position: center;
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .poster {
         width: 100%;
@@ -432,4 +483,17 @@ input:hover, textarea:hover {
     #home-wrapper {
         margin-top: 1em;
     }
+}
+
+@media (max-width: 450px) {
+    #fullheader #navmenu a {
+        padding: 0.25em;
+        font-size: 1.4em;
+    }
+
+    #fullheader {
+        height: 70px;
+        padding-left: 0.6em;
+    }
+
 }
