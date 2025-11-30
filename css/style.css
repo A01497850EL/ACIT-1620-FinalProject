@@ -435,14 +435,19 @@ textarea:hover {
 #anchor_container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-top: 9em;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 5em;
     align-items: center;
-    /* max-width: 90rem; */
     gap: 2rem;
     box-sizing: border-box;
+}
+
+#anchor_container_wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--beige);
+    margin-top: 9rem;
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    border-radius: 1.35rem;
 }
 
 #OneBattle,
@@ -672,8 +677,18 @@ textarea {
     }
 
     #anchor_container {
-        margin-top: 5em;
+        gap: 1rem;
     }
+
+    #anchor_container_wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--beige);
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+    padding: 1rem;
+    border-radius: 1.35rem;
+}
 }
 
 @media (max-width: 1050px) {
