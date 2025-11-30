@@ -9,8 +9,7 @@
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
-    }
-
+}
     .roboto-normal {
         font-family: "Roboto", sans-serif;
         font-optical-sizing: auto;
@@ -180,99 +179,112 @@ main {
     margin-top: 6ch;
 }
 
-.home_review {
-    display: flex;
-    gap: 24px;
-    margin: 1em;
-    margin-bottom: 80px;
+.nested-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 15% auto;
+    justify-content: start;
+    padding-left: 0;
+
 }
 
-.poster {
-    width: 200px;
-    border-radius: 12px;
-    height: fit-content;
-    object-fit: contain;
-    user-select: none;
-}
-
-.quotes {
-    width: 40px;
-    object-fit: contain;
-    height: fit-content;
-}
-
-.quotes_r {
-    width: 40px;
-    object-fit: contain;
-    height: fit-content;
-    transform: scale(-1);
-}
-
-.review-text {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-#footcontact {
-    padding: 0 5%;
+.film_title {
+    grid-column: 2 / span 1;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: var(--cham)
+    font-size: 150%;
 }
 
-footer {
-    background-color: var(--pred);
-    padding-bottom: 1em;
+.card {
+  width: 20em;
+  height: 3em;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-left: 1em;
+  grid-column: 4;
+  grid-row: 1;
+}
 
-    ul {
-        text-decoration: none;
-        color: var(--cham);
-        display: flex;
-        justify-content: space-between;
-        padding: 0 5%;
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        list-style-type: none;
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
-        a {
-            text-decoration: none;
-            color: var(--cham);
-            transition-duration: 400ms;
-        }
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
 
-        a:hover {
-            color: var(--cadyellow);
-        }
-    }
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
 
-    p {
-        margin-top: 2em;
-        padding: 0 5%;
-        font-size: 0.75em;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings:
-            "wdth" 100;
-        color: var(--strawberry)
-    }
+.card-front {
+  background:#E43636;
+  border: 1px solid #e5e7eb;
+}
 
-    a::selection,
-    p::selection,
-    h2::selection {
-        background-color: var(--cham);
-        color: var(--pred);
-    }
+.card-back {
+  background: black;
+  color:#E43636;
+  transform: rotateY(180deg);
+}
+
+
+.star_rating {
+    display: flex;
+    gap: 2em;
+    margin-top: 0;
+    justify-content: center;
 
 }
+
+.star_rating figure {
+    margin: 0;
+   
+}
+
+.star_rating img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.rating_title {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4ch;
+    justify-content: center;
+    text-align: center;
+    color: var(--beige);
+}
+
+
+blockquote {
+border:none;
+font-family: "Roboto", sans-serif;
+margin-bottom:-30px;
+position: relative; 
+max-width: 1250px;
+grid-row: 2;
+grid-column: 2 / span 3;
+    
+}
+
 
 @media (max-width: 800px) {
 
@@ -280,14 +292,20 @@ footer {
         display: none;
     }
 
-    .quotes_r {
-        display: none;
-    }
+/* Anchor Links */
+.anchor_poster {
+    width: 200px;
+    height: 250px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    
+    
 
-    .review-text {
-        width: 100%;
-    }
 }
+
+.anchor_poster:hover {
+    border-color:#E43636
+
 
 @media (max-width: 700px) {
     #fullheader {
@@ -300,6 +318,11 @@ footer {
     }
 }
 
+#anchor_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 5em;
+    margin-left: 3em;
 @media (max-width: 450px) {
     #fullheader #navmenu a {
         padding: 0.25em;
@@ -311,6 +334,76 @@ footer {
         padding-left: 0.6em;
     }
 
+}
+
+#OneBattle, #FantasticFour, #Tron, #MinusOne, #NowYouSee  {
+    text-align: center;
+    scroll-margin-top: 150px;
+}
+
+@media (max-width: 800px){
+    .reviewposter,
+    .film_title,
+    .nested-container,
+    .card,
+    blockquote {
+        grid-column: span 1 !important;
+        grid-row: auto !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nested-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .reviewposter img {
+        width: 60vw;
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
+
+    .film_title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    blockquote {
+        max-width: 100%;
+        margin: 0 1em;
+        text-align: center;
+    }
+
+    .card {
+        width: 15em;
+        height: 3.5em;
+        margin: 1em auto;
+    }
+
+    .star_rating {
+        justify-content: center;
+        gap: 0.6em;
+    }
+
+    #anchor_container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        margin-left: 0;
+        gap: 1.5em;
+    }
+
+    .anchor_poster {
+        width: 35vw;
+        max-width: 160px;
+        height: auto;
     #title {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
