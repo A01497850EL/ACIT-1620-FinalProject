@@ -293,7 +293,7 @@ blockquote {
     transition: border-color 0.3s ease-in-out;
     
     
-
+}
 input:hover, textarea:hover {
     background: #c5bfa8
 }
@@ -447,6 +447,8 @@ textarea {
         width: 35vw;
         max-width: 160px;
         height: auto;
+    }
+
     #title {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
