@@ -308,7 +308,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* sets the grid layout for each article */
 .nested-container {
     display: grid;
     grid-template-columns: auto auto auto 320px;
@@ -331,7 +331,7 @@ footer {
     margin: 0;
     margin-right: 1em;
 }
-/* card creation and hover effect for rating card */
+/* card creation and hover flip effect for rating card */
 .card {
     width: 20em;
     height: 3em;
@@ -395,7 +395,7 @@ footer {
     height: 30px;
 
 }
-
+/* styling for rating title */
 .rating_title {
 
     font-family: "Bebas Neue", sans-serif;
@@ -419,7 +419,7 @@ blockquote {
     margin: 0;
 }
 
-/* Anchor Links on Review Page */
+/* Anchor Links on Review Page including grid layout and hover effects around the posters*/
 .anchor_poster {
     width: calc(100% - 6px);
     border: 3px solid transparent;
@@ -460,7 +460,7 @@ textarea:hover {
     padding: 2rem;
     border-radius: 1.35rem;
 }
-/* Adjustments for anchor link spacing */
+/* Adjustments for anchor link spacing. sets the review text to the center of the page */
 #OneBattle,
 #FantasticFour,
 #Tron,
