@@ -284,7 +284,7 @@ footer {
 
 }
 
-/* Posters for Grid */
+/* Review Page Review/Poster Styling */
 .reviewposter img {
     width: 15rem;
     justify-content: center;
@@ -326,7 +326,7 @@ footer {
     margin: 0;
     margin-right: 1em;
 }
-
+/* card creation and hover effect for rating card */
 .card {
     width: 20em;
     height: 3em;
@@ -371,7 +371,7 @@ footer {
     transform: rotateY(180deg);
 }
 
-
+/* styling for stars in rating card */
 .star_rating {
     display: flex;
     gap: 2em;
@@ -402,7 +402,7 @@ footer {
     color: var(--beige);
 }
 
-
+/* review text block */
 blockquote {
     border: none;
     font-family: "Roboto", sans-serif;
@@ -414,7 +414,7 @@ blockquote {
     margin: 0;
 }
 
-/* Anchor Links */
+/* Anchor Links on Review Page */
 .anchor_poster {
     width: calc(100% - 6px);
     border: 3px solid transparent;
@@ -455,7 +455,7 @@ textarea:hover {
     padding: 2rem;
     border-radius: 1.35rem;
 }
-
+/* Adjustments for anchor link spacing */
 #OneBattle,
 #FantasticFour,
 #Tron,
