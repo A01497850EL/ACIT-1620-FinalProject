@@ -1,4 +1,3 @@
-/* Imported fonts from Google Fonts */
 :root {
     .limelight-regular {
         font-family: "Limelight", sans-serif;
@@ -21,7 +20,6 @@
             "wdth" 100;
     }
 
-    /* Pre-set colour values for easy and consistent design */
     --cham: #F6EFD2;
     --pred: #E43636;
     --beige: #E2DDB4;
@@ -30,7 +28,6 @@
 
 }
 
-/* Controls colour of selected text */
 *::selection {
     background-color: var(--pred);
     color: var(--cham);
@@ -42,7 +39,6 @@ body {
     flex-direction: column;
 }
 
-/* Makes overscroll look better than white with the dark hero image and red footer */
 html {
     background-color: black;
 }
@@ -177,7 +173,7 @@ main {
     }
 }
 
-/* Home Page */
+
 #home-wrapper {
     max-width: 90rem;
     margin-left: auto;
@@ -240,7 +236,6 @@ main {
     color: var(--cham)
 }
 
-/* Footer */
 footer {
     background-color: var(--pred);
     padding-bottom: 1em;
@@ -289,7 +284,7 @@ footer {
 
 }
 
-/* Review Page Review/Poster Styling */
+/* Posters for Grid */
 .reviewposter img {
     width: 15rem;
     justify-content: center;
@@ -308,7 +303,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-/* sets the grid layout for each article */
+
 .nested-container {
     display: grid;
     grid-template-columns: auto auto auto 320px;
@@ -331,7 +326,7 @@ footer {
     margin: 0;
     margin-right: 1em;
 }
-/* card creation and hover flip effect for rating card */
+
 .card {
     width: 20em;
     height: 3em;
@@ -376,7 +371,7 @@ footer {
     transform: rotateY(180deg);
 }
 
-/* styling for stars in rating card */
+
 .star_rating {
     display: flex;
     gap: 2em;
@@ -395,7 +390,7 @@ footer {
     height: 30px;
 
 }
-/* styling for rating title */
+
 .rating_title {
 
     font-family: "Bebas Neue", sans-serif;
@@ -407,7 +402,7 @@ footer {
     color: var(--beige);
 }
 
-/* review text block */
+
 blockquote {
     border: none;
     font-family: "Roboto", sans-serif;
@@ -419,7 +414,7 @@ blockquote {
     margin: 0;
 }
 
-/* Anchor Links on Review Page including grid layout and hover effects around the posters*/
+/* Anchor Links */
 .anchor_poster {
     width: calc(100% - 6px);
     border: 3px solid transparent;
@@ -460,7 +455,7 @@ textarea:hover {
     padding: 2rem;
     border-radius: 1.35rem;
 }
-/* Adjustments for anchor link spacing. sets the review text to the center of the page */
+
 #OneBattle,
 #FantasticFour,
 #Tron,
@@ -560,8 +555,6 @@ form input,
 textarea {
     border-radius: 1em;
 }
-
-/* Media queries for responsive design */
 
 @media (max-width: 800px) {
 
@@ -673,6 +666,7 @@ textarea {
 
     #anchor_container {
         grid-template-columns: auto auto;
+        /* grid-template-rows: 20rem 20rem 20rem; */
         gap: 1.5em;
     }
 }
@@ -712,5 +706,5 @@ textarea {
     .film_title {
         grid-column: 1 / span 3;
         margin-left: 2.5rem;
-    }
+`    }
 }
