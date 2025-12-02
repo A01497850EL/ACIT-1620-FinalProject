@@ -222,7 +222,6 @@ footer {
     padding-bottom: 1em;
 
     ul {
-        text-decoration: none;
         color: var(--cham);
         display: flex;
         justify-content: space-between;
@@ -252,7 +251,7 @@ footer {
         font-style: normal;
         font-variation-settings:
             "wdth" 100;
-        color: var(--strawberry)
+        color: var(--strawberry);
     }
 
     a::selection,
